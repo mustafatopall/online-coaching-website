@@ -1,0 +1,31 @@
+.kimim {
+
+    position:relative;
+    z-index: 1;
+    height: 470px;
+    width: 1440px;
+    color:white;
+    background-image: url("../foto/arka4.png");
+    font-family: 'Blinker', sans-serif;
+}
+
+.kimim p{
+    text-align: center;
+    width: 970px;
+    color:white;
+    font-size: 20px;
+}
+
+.kimim h1, .kimim h3{
+    margin-left: 200px;
+    margin-top: 10px;
+    color:red;
+}
+
+.kimim h1{
+    font-size: 50px;
+}
+.kimim h3{
+    font-size: 25px;
+    margin-bottom: 0px;
+}

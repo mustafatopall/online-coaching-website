@@ -1,0 +1,45 @@
+.anasayfa h1{
+    color: whitesmoke;
+    font-size: 65px;
+    text-align: center;
+    font-family: "Blinker", sans-serif;
+      }
+
+.anasayfa h2{
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Blinker", sans-serif;
+
+
+}
+
+.custom-button {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red; /* Buton arka plan rengi */
+    color: black; /* Yazı rengi */
+    font-family: 'Blinker', sans-serif; /* Yazı fontu */
+    font-size: 18px; /* Yazı boyutu */
+    font-weight: bold; /* Yazı kalınlığı */
+    padding: 15px 30px; /* İçerik boşlukları */
+    border-radius: 10px; /* Köşe yumuşatma */
+    text-align: center; /* Yazıyı ortala */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Gölgelendirme */
+    cursor: pointer; /* Fareyi üzerine getirince işaret değişir */
+    transition: all 0.3s ease; /* Geçiş efektleri */
+}
+
+.custom-button:hover {
+    background-color: darkred; /* Hover durumunda arka plan değişir */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Hover durumunda gölge değişir */
+}
+
+.custom-button a{
+    text-decoration: none;
+    color: black;
+}
+
+

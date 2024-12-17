@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS's/iletisim.css">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section id="iletisim" class="contact-section">
+    <h2>Bizimle İletişime Geçin</h2>
+    <p>Aşağıdaki formu doldurarak ya da doğrudan e-posta adresimiz üzerinden bizimle iletişime geçebilirsiniz.</p>
+
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı yazın" required></textarea>
+        </div>
+
+        <button type="submit">Gönder</button>
+    </form>
+
+    <div class="contact-info">
+        <p><strong>E-posta:</strong> musttafatqpal@gmail.com</p>
+    </div>
+</section>
+<script>
+    window.onload = function() {
+        const hedefBolum = document.getElementById("iletisim");
+        hedefBolum.scrollIntoView({
+            behavior: "smooth",
+            block: "end"
+        });
+    };
+</script>
+
+
+</body>
+</html>

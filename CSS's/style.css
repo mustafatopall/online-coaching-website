@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Blinker",sans-serif;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden; /* Yatay kaydırmayı engeller */
+    height: 100vh; /* Sayfa yüksekliği */
+}
+
+/* Video Arka Planı */
+.video-background {
+    position: fixed; /* Video tüm sayfada sabit */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* İçeriğin arkasında olacak */
+    overflow: hidden; /* Taşmaları gizler */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Video ekranı dolduracak */
+}
+
+/* Navigasyon Menüsü */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Hafif şeffaf menü arka planı */
+    padding: 20px;
+    z-index: 10; /* Videonun önünde */
+}
+
+/* Logo */
+nav .logo img {
+    height: 170px; /* Logo boyutu */
+    width: auto;
+}
+
+/* Menü Listesi */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 30px 0 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+/* Son Eleman için Özel Stil */
+nav ul li:last-child {
+    margin-right: 25px; /* Son elemanın sağ tarafına boşluk ekler */
+}
+
+/* Menü Linkleri */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover Efekti */
+nav ul li a:hover {
+    color: #ff6347; /* Turuncu renk */
+}
+
+/* İçerik (Iframe) */
+iframe {
+    margin-top: 100px; /* Menü yüksekliği kadar boşluk bırakılır */
+    width: 100%;
+    height: calc(100vh - 100px); /* Sayfa yüksekliği - Menü yüksekliği */
+    border: none;
+    position: relative;
+    z-index: 1; /* Video arka planının üzerinde */
+}
+
+.content {
+    position: relative; /* Videonun üzerinde konumlanır */
+    z-index: 1; /* Video arka planının önünde olacak */
+    padding: 20px;
+    margin-top: 100px; /* Menü çubuğu kadar boşluk */
+    text-align: center;
+}

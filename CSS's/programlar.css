@@ -1,0 +1,77 @@
+.product-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; /* Kartlar arasında eşit boşluk */
+     /* Satır geçişine izin verir */
+    gap: 15px; /* Kartlar arası boşluk */
+    max-width: 1200px; /* Konteyner genişliği */
+    margin: 0 auto; /* Ortalamak için */
+    padding: 0 10px; /* Dış kenarlardan boşluk bırak */
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(25% - 15px); /* Her bir kartın genişliği */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Hover animasyonu */
+}
+
+.product-card img {
+    width: 100%; /* Görseller kart genişliğine uyumlu */
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px; /* Başlık boyutu biraz küçültüldü */
+    margin: 10px 0;
+    color: red;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-card ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.product-card ul li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 15px 0;
+    color: red;
+}
+
+button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkred;
+}
