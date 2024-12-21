@@ -80,7 +80,7 @@ nav ul li a:hover {
 iframe {
     margin-top: 100px; /* Menü yüksekliği kadar boşluk bırakılır */
     width: 100%;
-    height: calc(100vh - 100px); /* Sayfa yüksekliği - Menü yüksekliği */
+    height: calc(90vh - 50px); /* Sayfa yüksekliği - Menü yüksekliği */
     border: none;
     position: relative;
     z-index: 1; /* Video arka planının üzerinde */
@@ -92,4 +92,41 @@ iframe {
     padding: 20px;
     margin-top: 100px; /* Menü çubuğu kadar boşluk */
     text-align: center;
+}
+
+footer {
+    background-color: black; /* Footer arka plan rengi */
+    color: #fff; /* Metin rengi */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #aaa; /* Daha yumuşak metin rengi */
+}
+
+footer img {
+    width: 30px; /* Logo genişliği */
+    height: auto; /* Oran koruma */
+    margin: 0 10px; /* Logolar arasındaki boşluk */
+    vertical-align: middle; /* Logoların ortalanması */
+    transition: transform 0.3s ease; /* Hover için animasyon */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Hover efektiyle biraz büyütme */
+    filter: brightness(1.2); /* Biraz parlaklık ekleme */
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff; /* Linkler için beyaz */
+}
+
+footer a:hover {
+    color: #00aaff; /* Link hover rengi */
 }
